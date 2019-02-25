@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FD9C691665CF043840494509B64A616E"
-               BlueprintName = "SnapKit"
+               BlueprintIdentifier = "99AA48135ECB557858428F797600458F"
+               BlueprintName = "ChromaColorPicker"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SnapKit.framework">
+               BuildableName = "ChromaColorPicker.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

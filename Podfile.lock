@@ -1,16 +1,20 @@
 PODS:
+  - ChromaColorPicker (1.7)
   - SnapKit (4.0.1)
 
 DEPENDENCIES:
+  - ChromaColorPicker
   - SnapKit (~> 4.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - ChromaColorPicker
     - SnapKit
 
 SPEC CHECKSUMS:
+  ChromaColorPicker: 33efa67b17cca51dd253689d18b83ac7e05642c2
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
 
-PODFILE CHECKSUM: 49cb9e52fd39c5c00e9e5ca1f8c1e973e04fa948
+PODFILE CHECKSUM: de7dfa2bc0985a02d32f7ae684c8f281d7189798
 
 COCOAPODS: 1.5.3
