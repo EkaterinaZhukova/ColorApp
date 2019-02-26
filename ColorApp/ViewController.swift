@@ -8,6 +8,8 @@
 
 import UIKit
 import ChromaColorPicker
+import SnapKit
+
 class ViewController: UIViewController {
 
     
@@ -35,7 +37,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.colorView.layer.cornerRadius = self.colorView.frame.height/2
-       configureSliders()
+        self.colorView.layer.borderColor = UIColor.gray.cgColor
+        self.colorView.layer.borderWidth = 2
+        configureSliders()
+        self.navigationItem.title = "RGB <-> CMYK"
+    
     }
     
     @objc func segmentedControlChanged() {
@@ -271,6 +277,9 @@ class ViewController: UIViewController {
     }
 
     
+    @IBAction func dismissKeyboard(_ sender: Any) {
+        self.view.endEditing(true)
+    }
     @IBAction func wasTappedColorView(_ sender: Any) {
         
         let neatColorPicker = ChromaColorPicker(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
@@ -290,6 +299,17 @@ class ViewController: UIViewController {
         self.view.addSubview(view)
         
     }
+    
+    @IBAction func showHSVViewController(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let controller = storyboard.instantiateViewController(withIdentifier: "hsvViewControllerId") as? HSVViewController {
+            controller.onCloseBlock = {
+                self.navigationController?.popViewController(animated: true)
+            }
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    
 }
 
 extension ViewController: ChromaColorPickerDelegate {
