@@ -394,7 +394,7 @@
                                                 </connections>
                                             </textField>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="iDd-Kh-1f4">
-                                                <rect key="frame" x="64.5" y="5" width="307.5" height="31"/>
+                                                <rect key="frame" x="64.5" y="5" width="307.5" height="41"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
                                                     <action selector="blueSliderMoved:" destination="hOo-8k-sAu" eventType="valueChanged" id="Rwc-ww-aeG"/>
@@ -408,6 +408,7 @@
                                             <constraint firstItem="6KZ-bB-rkJ" firstAttribute="top" secondItem="Ms6-xN-QE2" secondAttribute="top" constant="5" id="Qbj-6y-wAw"/>
                                             <constraint firstAttribute="bottom" secondItem="6KZ-bB-rkJ" secondAttribute="bottom" constant="5" id="WGV-ro-fUd"/>
                                             <constraint firstItem="iDd-Kh-1f4" firstAttribute="top" secondItem="Ms6-xN-QE2" secondAttribute="top" constant="5" id="a5h-zi-ndu"/>
+                                            <constraint firstAttribute="bottom" secondItem="iDd-Kh-1f4" secondAttribute="bottom" constant="5" id="but-i2-aFP"/>
                                             <constraint firstItem="6KZ-bB-rkJ" firstAttribute="leading" secondItem="Ms6-xN-QE2" secondAttribute="leading" constant="5" id="cHN-JN-EKB"/>
                                             <constraint firstItem="6KZ-bB-rkJ" firstAttribute="width" secondItem="Ms6-xN-QE2" secondAttribute="width" multiplier="0.15" id="oUW-CT-bLX"/>
                                             <constraint firstAttribute="height" constant="50" id="xUw-3o-uGU"/>
@@ -445,8 +446,7 @@
                                                 <rect key="frame" x="64.5" y="5" width="307.5" height="41"/>
                                                 <color key="tintColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                                 <connections>
-                                                    <action selector="hsvHueSliderMoved:" destination="hOo-8k-sAu" eventType="valueChanged" id="qYa-ap-1IO"/>
-                                                    <action selector="redSliderMoved:" destination="hOo-8k-sAu" eventType="valueChanged" id="h3t-wq-B2n"/>
+                                                    <action selector="hsvHueSliderMoved:" destination="hOo-8k-sAu" eventType="valueChanged" id="jg3-XE-NcN"/>
                                                 </connections>
                                             </slider>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gY7-6f-efh">
@@ -456,7 +456,6 @@
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
                                                 <connections>
                                                     <action selector="hsvHueTfChanged:" destination="hOo-8k-sAu" eventType="editingChanged" id="s2C-vz-acU"/>
-                                                    <action selector="redTFChanged:" destination="hOo-8k-sAu" eventType="editingChanged" id="RZP-y6-JFu"/>
                                                 </connections>
                                             </textField>
                                         </subviews>
@@ -483,7 +482,6 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
                                                 <connections>
-                                                    <action selector="greenRFChanged:" destination="hOo-8k-sAu" eventType="editingChanged" id="6KQ-GF-0os"/>
                                                     <action selector="hsvSaturationTfChanged:" destination="hOo-8k-sAu" eventType="editingDidEnd" id="xyB-Ik-LcA"/>
                                                 </connections>
                                             </textField>
@@ -491,8 +489,7 @@
                                                 <rect key="frame" x="64.5" y="5" width="307.5" height="41"/>
                                                 <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
-                                                    <action selector="greenSliderMoved:" destination="hOo-8k-sAu" eventType="valueChanged" id="b2e-k4-f6A"/>
-                                                    <action selector="hsvSaturationSliderMoved:" destination="hOo-8k-sAu" eventType="valueChanged" id="bkh-ss-cn3"/>
+                                                    <action selector="hsvSaturationSliderMoved:" destination="hOo-8k-sAu" eventType="valueChanged" id="ffJ-Zb-9q9"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
@@ -519,7 +516,6 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
                                                 <connections>
-                                                    <action selector="blueTFChanged:" destination="hOo-8k-sAu" eventType="editingChanged" id="aZ1-MA-C15"/>
                                                     <action selector="hsvValueTfChanged:" destination="hOo-8k-sAu" eventType="editingDidEnd" id="sNz-SR-cc9"/>
                                                 </connections>
                                             </textField>
@@ -527,8 +523,7 @@
                                                 <rect key="frame" x="64.5" y="5" width="307.5" height="31"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
-                                                    <action selector="blueSliderMoved:" destination="hOo-8k-sAu" eventType="valueChanged" id="Qom-6o-pmI"/>
-                                                    <action selector="hsvValueSliderMoved:" destination="hOo-8k-sAu" eventType="valueChanged" id="g7U-1K-jee"/>
+                                                    <action selector="hsvValueSliderMoved:" destination="hOo-8k-sAu" eventType="valueChanged" id="HO6-hJ-TPg"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
