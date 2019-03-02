@@ -14,8 +14,8 @@
 		C42CE10C2221790C00D5FF67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42CE10B2221790C00D5FF67 /* Assets.xcassets */; };
 		C42CE10F2221790C00D5FF67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42CE10D2221790C00D5FF67 /* LaunchScreen.storyboard */; };
 		C42CE117222179DA00D5FF67 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42CE116222179DA00D5FF67 /* ColorModel.swift */; };
+		C461D77D222A4B97004985B2 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C461D77C222A4B97004985B2 /* Calculator.swift */; };
 		C4BAB8102225C36100CE3ACC /* HSVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BAB80F2225C36100CE3ACC /* HSVViewController.swift */; };
-		C4BAB8122225C9C100CE3ACC /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BAB8112225C9C100CE3ACC /* Presenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		C42CE1102221790C00D5FF67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C42CE116222179DA00D5FF67 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 		C45966A73CFAF0E65F2420E1 /* Pods-ColorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColorApp/Pods-ColorApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C461D77C222A4B97004985B2 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		C4BAB80F2225C36100CE3ACC /* HSVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSVViewController.swift; sourceTree = "<group>"; };
-		C4BAB8112225C9C100CE3ACC /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		E06271426A7A40C86782DEB2 /* Pods-ColorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColorApp/Pods-ColorApp.release.xcconfig"; sourceTree = "<group>"; };
 		E939C1D4EC01C8A0A8A515B8 /* Pods_ColorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				C42CE1042221790A00D5FF67 /* AppDelegate.swift */,
-				C4BAB8112225C9C100CE3ACC /* Presenter.swift */,
 				C42CE1062221790A00D5FF67 /* ViewController.swift */,
 				C42CE1082221790A00D5FF67 /* Main.storyboard */,
 				C42CE10B2221790C00D5FF67 /* Assets.xcassets */,
@@ -84,6 +83,7 @@
 				C42CE1102221790C00D5FF67 /* Info.plist */,
 				C42CE116222179DA00D5FF67 /* ColorModel.swift */,
 				C4BAB80F2225C36100CE3ACC /* HSVViewController.swift */,
+				C461D77C222A4B97004985B2 /* Calculator.swift */,
 			);
 			path = ColorApp;
 			sourceTree = "<group>";
@@ -215,7 +215,7 @@
 				C42CE1052221790A00D5FF67 /* AppDelegate.swift in Sources */,
 				C4BAB8102225C36100CE3ACC /* HSVViewController.swift in Sources */,
 				C42CE117222179DA00D5FF67 /* ColorModel.swift in Sources */,
-				C4BAB8122225C9C100CE3ACC /* Presenter.swift in Sources */,
+				C461D77D222A4B97004985B2 /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
